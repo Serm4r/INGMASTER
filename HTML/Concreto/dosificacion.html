@@ -213,9 +213,9 @@
 
             const cantidadCemento = kilosCemento * cantidadConcreto;
             const bolsasCemento = Math.ceil(cantidadCemento / 42.5);
-            const preciobolsas = bolsasCemento * preciocemento
-            const precioArena = precioarena * proporcionArena
-            const precioGrava = preciograva * proporcionGrava
+            const preciobolsas = bolsasCemento * preciocemento 
+            const precioArena = precioarena * proporcionArena * cantidadConcreto;
+            const precioGrava = preciograva * proporcionGrava * cantidadConcreto;
             const total = preciobolsas + precioArena + precioGrava;
             const aguaMin = cantidadConcreto * 200; // Se recomienda 200 litros de agua por metro cúbico de concreto
 
